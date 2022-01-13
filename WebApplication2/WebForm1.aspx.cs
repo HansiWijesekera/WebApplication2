@@ -22,7 +22,7 @@ namespace WebApplication2
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("insert into data values('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + TextBox4.Text + "')", con);
+            SqlCommand cmd = new SqlCommand("insert into data values('" + TextBox1.Text + "','" + TextBox3.Text + "','" + TextBox2.Text + "','" + TextBox4.Text + "')", con);
             cmd.ExecuteNonQuery();
             con.Close();
             Label1.Text = "Data has been inserted";
